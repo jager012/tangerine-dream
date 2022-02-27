@@ -1,0 +1,1171 @@
+:root {
+    --is-dark-theme: true;
+    /*--color-primary: #f3722c;
+    --color-primary-dark-1: #f2691f;
+    --color-primary-dark-2: #f48041;
+    --color-primary-dark-3: #f69764;
+    --color-primary-dark-4: #f8ae86;
+    --color-primary-dark-5: #fac5a9;
+    --color-primary-dark-6: #fcdccb;
+    --color-primary-dark-7: #fef3ee;
+    --color-primary-light-1: #e0570d;
+    --color-primary-light-2: #be4a0b;
+    --color-primary-light-3: #9b3c09;
+    --color-primary-light-4: #792f07;
+    --color-primary-light-5: #792f07;
+    --color-primary-light-6: #341403;
+    --color-primary-light-7: #110701;*/
+    --color-primary: #ff7d37;
+    --color-primary-dark-1: #ff8747;
+    --color-primary-dark-2: #ff9a63;
+    --color-primary-dark-3: #ffac80;
+    --color-primary-dark-4: #ffbf9c;
+    --color-primary-dark-5: #ffd1b8;
+    --color-primary-dark-6: #ffe3d4;
+    --color-primary-dark-7: #fff6f1;
+    --color-primary-light-1: #ff6410;
+    --color-primary-light-2: #cf4900;
+    --color-primary-light-3: #af3d00;
+    --color-primary-light-4: #8f3200;
+    --color-primary-light-5: #702700;
+    --color-primary-light-6: #501c00;
+    --color-primary-light-7: #301100;
+    --color-primary-alpha-10: #ff874719;
+    --color-primary-alpha-20: #ff874733;
+    --color-primary-alpha-30: #ff87474b;
+    --color-primary-alpha-40: #ff874766;
+    --color-primary-alpha-50: #ff874780;
+    --color-primary-alpha-60: #ff874799;
+    --color-primary-alpha-70: #ff8747b3;
+    --color-primary-alpha-80: #ff8747cc;
+    --color-primary-alpha-90: #ff8747e1;
+    --color-secondary: #1a1c20; /*#2C2F35*/
+    --color-secondary-dark-1: #505665;
+    --color-secondary-dark-2: #5b6273;
+    --color-secondary-dark-3: #71798e;
+    --color-secondary-dark-4: #7f8699;
+    --color-secondary-dark-5: #8c93a4;
+    --color-secondary-dark-6: #9aa0af;
+    --color-secondary-dark-7: #a8adba;
+    --color-secondary-dark-7: #b6bac5;
+    --color-secondary-dark-8: #c4c7d0;
+    --color-secondary-dark-8: #d2d4db;
+    --color-secondary-dark-9: #dfe1e6;
+    --color-secondary-dark-10: #edeef1;
+    --color-secondary-dark-11: #fbfbfc;
+    --color-secondary-light-1: #373b46;
+    --color-secondary-light-2: #292c34;
+    --color-secondary-light-3: #1c1e23;
+    --color-secondary-light-4: #0e0f11;
+    --color-secondary-alpha-10: #2C2F35;
+    --color-secondary-alpha-20: #2C2F3533;
+    --color-secondary-alpha-30: #2C2F354b;
+    --color-secondary-alpha-40: #2C2F3566;
+    --color-secondary-alpha-50: #2C2F3580;
+    --color-secondary-alpha-60: #2C2F3599;
+    --color-secondary-alpha-70: #2C2F35b3;
+    --color-secondary-alpha-80: #2C2F35cc;
+    --color-secondary-alpha-90: #2C2F35e1;
+    /* colors */
+    --color-red: #d53d3f; /* FIXME: MAYBE TOO DARK FOR TEXT?? */ /* 2nd choice: #ed4245; MAYBE TOO LIGHT */ /* WAS #da3737 */ 
+    /* TODO: other colors*/
+    --color-orange: #f17a2b;
+    --color-yellow: #f3c725; /* was #f3c640 */
+    --color-olive: #c8df36;
+    --color-green: #3bc75b;
+    --color-teal: #69d4cf;
+    --color-blue: #2d9ff7;
+    --color-violet: #754ad3;
+    --color-purple: #b65dd4;
+    --color-pink: #e04b9f;
+    --color-brown: #a86d45;
+    --color-grey: #797c85;
+    --color-black: #141516;
+    --color-gold: #d4b74c;
+    --color-white: #ffffff;
+    --color-diff-removed-word-bg: #6f3333;
+    --color-diff-added-word-bg: #3c653c;
+    --color-diff-removed-row-bg: #3c2626;
+    --color-diff-moved-row-bg: #818044;
+    --color-diff-added-row-bg: #283e2d;
+    --color-diff-removed-row-border: #634343;
+    --color-diff-moved-row-border: #bcca6f;
+    --color-diff-added-row-border: #314a37;
+    --color-diff-inactive: #1D1F23;
+    --color-error-border: #d53d3f; /* FIXME: maybe slightly darker */ /* WAS #a53a37;*/
+    --color-error-bg: #d53d3f;
+    --color-error-text: #ffffff; /* FIXME: not really sure */
+    --color-success-border: #2b924b;
+    --color-success-bg: #40a45f;
+    --color-success-text: #ffffff; /* FIXME: same as error, check if it is used somewhere else WAS #6cc664 */
+    --color-warning-border: #e7c721; /* WAS #bb9d00 */
+    --color-warning-bg: #3a3a30;
+    --color-warning-text: #f7d41f; /* WAS #fbbd08 */
+    --color-info-border: #306090;
+    --color-info-bg: #26354c;
+    --color-info-text: #38a8e8;
+    /* target-based colors */
+    --color-body: #202124;
+    --color-box-header: #1D1F23;
+    --color-box-body: #1D1F23;
+    --color-text-dark: #dbe0ea;
+    --color-text: #dbe0ea;
+    --color-text-light: #cecfd5;
+    --color-text-light-2: #a9acb5; /* #8a8e99 */
+    --color-text-light-3: #6d717e; /* #707687 */
+    --color-footer: #1D1F23;
+    --color-timeline: #4c525e;
+    --color-input-text: #e1e4e6;
+    --color-input-background: #2C2F35;
+    --color-input-border: #2C2F35;
+    --color-input-border-hover: #505667;
+    --color-navbar: #2b2f38; /*#24262B */
+    --color-navbar-transparent: #24262B00;
+    --color-light: #00000028;
+    --color-light-mimic-enabled: rgba(0, 0, 0, calc(40 / 255 * 222 / 255 / var(--opacity-disabled)));
+    --color-light-border: #ffffff28;
+    --color-hover: #ffffff10;
+    --color-active: #ffffff16;
+    --color-menu: #1D1F23;
+    --color-card: #1D1F23;
+    --color-markup-table-row: #ffffff12;
+    --color-markup-code-block: #2C2F35;
+    --color-button: #1D1F23;
+    --color-code-bg: #1D1F23;
+    --color-code-sidebar-bg: #1D1F23;
+    --color-shadow: #00000060;
+    --color-secondary-bg: #2C2F35;
+    --color-text-focus: #fff;
+    --color-expand-button: #2C2F35;
+    --color-placeholder-text: #a6adb4;
+    --color-editor-line-highlight: var(--color-primary-light-5);
+    --color-project-board-bg: var(--color-secondary-light-2);
+    --color-caret: var(--color-text); /* should ideally be --color-text-dark, see #15651 */
+    --color-reaction-bg: #ffffff12;
+    --color-reaction-active-bg: var(--color-primary-alpha-40);
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(.8);
+}
+
+.ui.horizontal.segments>.segment {
+    background-color: #383c4a;
+}
+
+.ui.green.progress .bar {
+    background-color: #668844;
+}
+
+.ui.progress.success .bar {
+    background-color: #7b9e57 !important;
+}
+
+.following.bar.light {  /* TOP NAVBAR - default: --color-body */
+    /*background: #2e323e;*/
+    border-color: var(--color-secondary-alpha-40);
+}
+
+.following.bar .top.menu a.item:hover {
+    color: #fff;
+}
+
+.feeds .list ul li.private {
+    background: #292c32; /* #353945 */
+}
+
+.ui.red.label,
+.ui.red.labels .label {
+    background-color: #d53d3f; /* #ad2525 !important; */
+    border-color: #d53d3f; /*#ad2525 !important; */
+}
+
+
+/* PRIVATE ORGANIZATION */
+/* TODO: seems ok? */
+.ui.orange.labels .label,
+.ui.ui.ui.orange.label {
+    background-color: #f2711c;
+    border-color: #f2711c;
+    color: #fff;
+}
+
+/* TODO: WHERE IS IT?? */
+.ui.yellow.label,
+.ui.yellow.labels .label {
+    border-color: #664d02 !important;
+    background-color: #936e00 !important;
+}
+
+.ui.accordion .title:not(.ui) {
+    color: #dbdbdb;
+}
+
+.ui.green.label,
+.ui.green.labels .label,
+.ui.basic.green.label {
+    background-color: #5865f2 !important; /* #2d693b -- SAME AS BUTTON */
+    border-color: #5865f2 !important;
+}
+
+.ui.green.labels a.label:hover,
+.ui.basic.green.labels a.label:hover,
+a.ui.ui.ui.green.label:hover,
+a.ui.basic.green.label:hover {
+    background-color: #40a45f !important; /* was #3d794b */
+    border-color: #40a45f !important;
+    color: #fff !important;
+}
+
+.ui.divider:not(.vertical):not(.horizontal) {
+    border-bottom-color: var(--color-secondary);
+    border-top-color: transparent;
+}
+
+.form .help {
+    color: var(--color-text-light-2);
+}
+
+/*.ui .text.light.grey { /* -- DIMMED TEXT
+    color: #7f8699 !important;
+  }*/
+
+.ui.form .fields.error .field textarea,
+.ui.form .fields.error .field select,
+.ui.form .fields.error .field input:not([type]),
+.ui.form .fields.error .field input[type="date"],
+.ui.form .fields.error .field input[type="datetime-local"],
+.ui.form .fields.error .field input[type="email"],
+.ui.form .fields.error .field input[type="number"],
+.ui.form .fields.error .field input[type="password"],
+.ui.form .fields.error .field input[type="search"],
+.ui.form .fields.error .field input[type="tel"],
+.ui.form .fields.error .field input[type="time"],
+.ui.form .fields.error .field input[type="text"],
+.ui.form .fields.error .field input[type="file"],
+.ui.form .fields.error .field input[type="url"],
+.ui.form .field.error textarea,
+.ui.form .field.error select,
+.ui.form .field.error input:not([type]),
+.ui.form .field.error input[type="date"],
+.ui.form .field.error input[type="datetime-local"],
+.ui.form .field.error input[type="email"],
+.ui.form .field.error input[type="number"],
+.ui.form .field.error input[type="password"],
+.ui.form .field.error input[type="search"],
+.ui.form .field.error input[type="tel"],
+.ui.form .field.error input[type="time"],
+.ui.form .field.error input[type="text"],
+.ui.form .field.error input[type="file"],
+.ui.form .field.error input[type="url"] {
+    background-color: #522;
+    border: 1px solid #7d3434;
+    color: #f9cbcb;
+}
+
+.ui.form .field.error select:focus,
+.ui.form .field.error input:not([type]):focus,
+.ui.form .field.error input[type="date"]:focus,
+.ui.form .field.error input[type="datetime-local"]:focus,
+.ui.form .field.error input[type="email"]:focus,
+.ui.form .field.error input[type="number"]:focus,
+.ui.form .field.error input[type="password"]:focus,
+.ui.form .field.error input[type="search"]:focus,
+.ui.form .field.error input[type="tel"]:focus,
+.ui.form .field.error input[type="time"]:focus,
+.ui.form .field.error input[type="text"]:focus,
+.ui.form .field.error input[type="file"]:focus,
+.ui.form .field.error input[type="url"]:focus {
+    background-color: #522;
+    border: 1px solid #a04141;
+    color: #f9cbcb;
+}
+
+.ui.green.button,
+.ui.green.buttons .button {
+    background-color: #5865f2;
+}
+
+.ui.green.button:hover,
+.ui.green.buttons .button:hover {
+    background-color: #6c77f4;
+}
+
+.ui.green.button:focus,
+.ui.green.buttons .button:focus {
+    background-color: #7983F5; /* WAS: HOVER #7983F5 */
+}
+
+.ui.green.button:active,
+.ui.green.buttons .button:active {
+    background-color: #848ef6;
+}
+
+.ui.search>.results {
+    background: #383c4a;
+    border-color: var(--color-secondary);
+}
+
+.ui.search>.results .result:hover,
+.ui.category.search>.results .category .result:hover {
+    background: var(--color-secondary);
+}
+
+.ui.search>.results .result .title {
+    color: #dbdbdb;
+}
+
+.ui.table>thead>tr>th {
+    background: var(--color-secondary);
+    color: #dbdbdb !important;
+}
+
+/* FILES ROW - default --body-color
+  .repository.file.list #repo-files-table tr {
+    background: #2a2e3a;
+  } 
+  */
+
+.repository.file.list #repo-files-table tr:hover {
+    background-color: #393d4a !important;
+}
+
+.overflow.menu .items .item {
+    color: #9d9d9d;
+}
+
+.overflow.menu .items .item:hover {
+    color: #dbdbdb;
+}
+
+.ui.list>.item>.content {
+    color: var(--color-secondary-dark-6) !important;
+}
+
+.repository .navbar .active.item,
+.repository .navbar .active.item:hover {
+    border-color: transparent !important;
+}
+
+.repository .diff-stats li {
+    border-color: var(--color-secondary);
+}
+
+.tag-code,
+.tag-code td {
+    background: #292c32 !important; /* #353945 */
+}
+
+.tag-code td.lines-num {
+    background-color: #3a3e4c !important;
+}
+
+.tag-code td.lines-type-marker,
+td.blob-hunk {
+    color: #dbdbdb !important;
+}
+
+.ui.red.button,
+.ui.red.buttons .button {
+    background-color: #ed4245;
+}
+
+.ui.red.button:hover,
+.ui.red.buttons .button:hover {
+    background-color: #f05c5e;
+}
+
+.ui.list .list>.item .header,
+.ui.list>.item .header {
+    color: #dedede;
+}
+
+.ui.list .list>.item .description,
+.ui.list>.item .description {
+    color: var(--color-secondary-dark-6);
+}
+
+.repository.labels .ui.basic.black.label {
+    background-color: #bbbbbb !important;
+}
+
+.lines-num {
+    color: var(--color-secondary-dark-6) !important;
+    border-color: var(--color-secondary) !important;
+}
+
+td.blob-excerpt {
+    background-color: rgba(0, 0, 0, .15);
+}
+
+.lines-code.active,
+.lines-code .active {
+    background: #534d1b !important;
+}
+
+.ui.ui.ui.ui.table tr.active,
+.ui.ui.table td.active {
+    color: #dbdbdb;
+}
+
+.ui.active.label {
+    background: #393d4a;
+    border-color: #393d4a;
+    color: #dbdbdb;
+}
+
+.ui.header .sub.header {
+    color: var(--color-secondary-dark-6);
+}
+
+.ui.dividing.header {
+    border-bottom: 1px solid var(--color-secondary);
+}
+
+.ui.modal>.header {
+    background: var(--color-secondary);
+    color: #dbdbdb;
+}
+
+.ui.modal>.actions {
+    background: var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+
+.ui.modal>.content {
+    background: #383c4a;
+}
+
+.minicolors-panel {
+    background: var(--color-secondary) !important;
+    border-color: #6a737d !important;
+}
+
+/* invert emojis that are hard to read otherwise */
+.emoji[aria-label="check mark"],
+.emoji[aria-label="currency exchange"],
+.emoji[aria-label="TOP arrow"],
+.emoji[aria-label="END arrow"],
+.emoji[aria-label="ON! arrow"],
+.emoji[aria-label="SOON arrow"],
+.emoji[aria-label="heavy dollar sign"],
+.emoji[aria-label="copyright"],
+.emoji[aria-label="registered"],
+.emoji[aria-label="trade mark"],
+.emoji[aria-label="multiply"],
+.emoji[aria-label="plus"],
+.emoji[aria-label="minus"],
+.emoji[aria-label="divide"],
+.emoji[aria-label="curly loop"],
+.emoji[aria-label="double curly loop"],
+.emoji[aria-label="wavy dash"],
+.emoji[aria-label="paw prints"],
+.emoji[aria-label="musical note"],
+.emoji[aria-label="musical notes"] {
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+.edit-diff>div>.ui.table {
+    border-left-color: var(--color-secondary) !important;
+    border-right-color: var(--color-secondary) !important;
+}
+
+footer .container .links>* {
+    border-left-color: #888;
+}
+
+.repository.release #release-list>li .detail .dot {
+    background-color: #505667;
+    border-color: #383c4a;
+}
+
+.tribute-container {
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .6);
+}
+
+.repository .repo-header .ui.huge.breadcrumb.repo-title .repo-header-icon .avatar {
+    color: #2a2e3a;
+}
+
+img[src$="/img/matrix.svg"] {
+    filter: invert(80%);
+}
+
+.is-loading::after {
+    border-color: #4a4c58 #4a4c58 #d7d7da #d7d7da;
+}
+
+.markup-block-error {
+    border: 1px solid rgba(121, 71, 66, .5) !important;
+    border-bottom: none !important;
+}
+
+.home .hero .svg {
+    color: var(--color-primary);
+}
+
+
+/* UI */
+/* --color-error-... */
+/* .ui.error.message,
+.ui.red.message {
+  background-color: #522;
+  color: #f9cbcb;
+  box-shadow: inset 0 0 0 1px #a04141;
+} */
+
+
+/* ---------------------------- */
+
+
+/*.ui.error.header,
+.ui.error.message {
+  background-color: #522 !important;
+  border-color: #a04141;
+}*/
+
+.ui.error.segment {
+    border-color: #a04141;
+}
+
+.ui.negative.message {
+    background-color: #E14C4C;
+    color: #FFFFFF;
+    box-shadow: inset 0 0 0 1px #E14C4C, 0 0 0 0 transparent;
+}
+
+/* BUTTONS */
+.ui.blue.button,
+.ui.blue.buttons .button,
+.ui.primary.button,
+.ui.primary.buttons .button {
+    background-color: var(--color-primary-light-2) !important;
+}
+
+.ui.blue.button:hover,
+.ui.blue.buttons .button:hover,
+.ui.primary.button:hover,
+.ui.primary.buttons .button:hover {
+    background-color: var(--color-primary-light-1) !important;
+}
+
+.ui.blue.button:focus,
+.ui.blue.buttons .button:focus,
+.ui.primary.button:focus,
+.ui.primary.buttons .button:focus {
+    background-color: var(--color-primary) !important;
+}
+
+.ui.blue.button:active,
+.ui.blue.buttons .button:active,
+.ui.primary.button:active,
+.ui.primary.buttons .button:active {
+    background-color: var(--color-primary-dark-1) !important;
+}
+
+.ui.basic.blue.button,
+.ui.basic.blue.buttons .button,
+.ui.basic.primary.button,
+.ui.basic.primary.buttons .button {
+    box-shadow: inset 0 0 0 1px var(--color-primary-light-2) !important;
+    color: #fff !important;
+}
+
+.ui.basic.blue.button:hover,
+.ui.basic.blue.buttons .button:hover,
+.ui.basic.primary.button:hover,
+.ui.basic.primary.buttons .button:hover {
+    box-shadow: inset 0 0 0 1px var(--color-primary-light-1) !important;
+}
+
+.ui.basic.blue.button:focus,
+.ui.basic.blue.buttons .button:focus,
+.ui.basic.primary.button:focus,
+.ui.basic.primary.buttons .button:focus {
+    box-shadow: inset 0 0 0 1px var(--color-primary) !important;
+}
+
+.ui.basic.blue.button:active,
+.ui.basic.blue.buttons .button:active,
+.ui.basic.primary.button:active,
+.ui.basic.primary.buttons .button:active {
+    box-shadow: inset 0 0 0 1px var(--color-primary-dark-1) !important;
+}
+
+/* FIXME: maybe change green?? */
+.ui.basic.red.buttons .button,
+.ui.basic.red.button {
+    background: transparent;
+    box-shadow: 0 0 0 1px #ed4245 inset;
+    color: #ed4245;
+}
+
+.ui.basic.red.buttons .button:hover,
+.ui.basic.red.button:hover {
+    background: transparent;
+    box-shadow: 0 0 0 1px #e9161a inset;
+    color: #e9161a;
+}
+
+.ui.basic.red.buttons .button:focus,
+.ui.basic.red.button:focus {
+    background: transparent;
+    box-shadow: 0 0 0 1px #bf1215 inset;
+    color: #bf1215;
+}
+
+.ui.basic.red.buttons .button:active,
+.ui.basic.red.button:active {
+    background: transparent;
+    box-shadow: 0 0 0 1px #bb2427 inset;
+    color: #bb2427;
+    /* FIXME: SCREEN transparent red button*/
+}
+
+/* .ui.basic.green.buttons .button, .ui.basic.green.button {
+  background: transparent;
+  box-shadow: 0 0 0 1px #21ba45 inset; /* DISCORD #40a45f 
+  color: #21ba45;
+}
+.ui.basic.green.buttons .button:hover, .ui.basic.green.button:hover {
+  background: transparent;
+  box-shadow: 0 0 0 1px #16ab39 inset;
+  color: #16ab39;
+}
+.ui.basic.green.buttons .button:focus, .ui.basic.green.button:focus {
+  background: transparent;
+  box-shadow: 0 0 0 1px #0ea432 inset;
+  color: #16ab39;
+}
+.ui.basic.green.buttons .button:active, .ui.basic.green.button:active {
+  box-shadow: 0 0 0 1px #198f35 inset;
+  color: #198f35;
+}
+*/
+
+
+/* UI Buttons (Labels, Milestones...) */
+.ui.menu .item {
+    position: relative;
+    vertical-align: middle;
+    line-height: 1;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    flex: 0 0 auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background: var(--color-secondary-light-2);
+    padding: 0.92857143em 1.14285714em;
+    text-transform: none;
+    font-weight: 400;
+    transition: background .1s ease, box-shadow .1s ease, color .1s ease;
+}
+
+/* Home side menu - is this a bug?? */
+/* FIXME: check for unexpected effects */
+.ui.menu>.item:last-child {
+    border-radius: 0 .28571429rem .28571429rem 0;
+}
+
+.ui.link.menu .item:hover,
+.ui.menu .dropdown.item:hover,
+.ui.menu .link.item:hover,
+.ui.menu a.item:hover {
+    color: #f2f2f2;
+    background: #6e7deb;
+}
+
+.ui.link.menu .item:active,
+.ui.menu .link.item:active,
+.ui.menu a.item:active {
+    background: #7f88f3;
+}
+
+.ui.menu .active.item,
+.ui.menu .active.item:hover,
+.ui.vertical.menu .active.item,
+.ui.vertical.menu .active.item:hover {
+    color: var(--color-text);
+    background: #5865f2;
+}
+
+/* REPO BUTTONS HOVER primary-light-2 */
+.repo-buttons .ui.labeled.button>.label:hover {
+    color: var(--color-primary);
+    background: var(--color-light);
+}
+
+/* SELECTION */
+::selection,
+.CodeMirror-selected {
+    background: var(--color-primary-light-3) !important;
+    color: var(--color-white) !important;
+}
+
+/* EDIT FOCUS BORDER */
+.ui.action.input:not([class*="left action"])>input:focus {
+    border-right-color: var(--color-primary-light-1); /* was color-primary */
+}
+
+.ui.action.input:not([class*="left action"])>input:focus {
+    border-right-color: var(--color-primary-light-1); /*#85b7d9 */
+}
+
+input:focus,
+textarea:focus,
+.ui.input input:focus,
+.ui.form input:not([type]):focus,
+.ui.form select:focus,
+.ui.form textarea:focus,
+.ui.form input[type=date]:focus,
+.ui.form input[type=datetime-local]:focus,
+.ui.form input[type=email]:focus,
+.ui.form input[type=file]:focus,
+.ui.form input[type=number]:focus,
+.ui.form input[type=password]:focus,
+.ui.form input[type=search]:focus,
+.ui.form input[type=tel]:focus,
+.ui.form input[type=text]:focus,
+.ui.form input[type=time]:focus,
+.ui.form input[type=url]:focus,
+.ui.selection.dropdown:focus,
+.ui.checkbox input:focus~label:before,
+.ui.checkbox input:not([type="radio"]):indeterminate:focus~label:before,
+.ui.checkbox input:checked:focus~label:before,
+.ui.radio.checkbox input:focus:checked~label:before {
+    background: var(--color-input-background);
+    border-color: var(--color-primary-light-1);
+    color: var(--color-input-text);
+}
+
+/* GREY (?) LABELS */
+.ui.grey.labels .label,
+.ui.ui.ui.grey.label {
+    /* background-color: var(--color-primary-light-2); */
+    background-color: #5865f2;
+    border-color: #767676;
+    color: #fff;
+}
+
+
+/* COMMIT HEADER */
+/* FIXME: what's that??? */
+/* TODO: maybe change color */
+.ui .info.segment.top {
+    background-color: var(--color-secondary-light-2) !important;
+}
+
+/* BOXES IN ISSUE */
+.ui.segment,
+.ui.segments,
+.ui.attached.segment {
+    background: #151618;    /* WAS LIGHTER: #18191a */
+    color: var(--color-text);
+    border-color: var(--color-secondary);
+} /* FIXME: seems ok. maybe lighter?? */
+
+
+/* UI MODAL */
+.ui.modal>.content {
+    background: var(--color-box-body); /* #383c4a */
+}
+
+
+/* DASHBOARD FEEDS - STACKABLE MENU */
+.dashboard.feeds .right.stackable.menu>.item.active,
+.dashboard.issues .right.stackable.menu>.item.active {
+    color: var(--color-primary); /* --color-red */
+}
+
+/* MD */
+.markup h1 {
+    padding-bottom: 0.3em;
+    font-size: 2em;
+    border-bottom: 1px solid var(--color-primary-alpha-50);
+}
+
+.markup h2 {
+    padding-bottom: 0.3em;
+    font-size: 1.5em;
+    border-bottom: 1px solid var(--color-primary-alpha-50); /* FIXME: another color ??? */
+}
+
+.markup blockquote {
+    margin-left: 0;
+    padding: 0 15px;
+    color: var(--color-text-light-2);
+    border-left: 4px solid var(--color-primary-dark-1);
+}
+
+.markup hr {
+    height: 4px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: var(--color-primary-alpha-50);
+    border: 0;
+}
+
+.markup table th,
+.markup table td {
+    padding: 6px 13px !important;
+    border: 1px solid var(--color-secondary-dark-1) !important;
+}
+
+
+/* NOPE span.green .svg {
+  color: var(--color-primary);
+} */
+
+
+/* REPOSITORY -> ACTIVITY */
+.ui.horizontal.segments>.segment {
+    background-color: var(--color-box-body);
+}
+
+/* OPEN ISSUE LABEL */
+/* KEKW
+.ui.ui.ui.green.label {
+  background-color: #21ba45 !important;
+  border-color: #21ba45 !important;
+  color: #fff;
+} */
+
+
+/* SYNTAX HIGHLIGHT */
+/* LineHighlight */
+.chroma .hl {
+    background-color: #3f424d;
+}
+
+/* LineNumbersTable */
+.chroma .lnt {
+    color: #7f7f7f;
+}
+
+/* LineNumbers */
+.chroma .ln {
+    color: #7f7f7f;
+}
+
+/* Keyword */
+.chroma .k {
+    color: #f63;
+}
+
+/* KeywordConstant */
+.chroma .kc {
+    color: #fa1;
+}
+
+/* KeywordDeclaration */
+.chroma .kd {
+    color: #9daccc;
+}
+
+/* KeywordNamespace */
+.chroma .kn {
+    color: #fa1;
+}
+
+/* KeywordPseudo */
+.chroma .kp {
+    color: #5f8700;
+}
+
+/* KeywordReserved */
+.chroma .kr {
+    color: #f63;
+}
+
+/* KeywordType */
+.chroma .kt {
+    color: #9daccc;
+}
+
+/* NameAttribute */
+.chroma .na {
+    color: #8a8a8a;
+}
+
+/* NameBuiltin */
+.chroma .nb {
+    color: #9daccc;
+}
+
+/* NameBuiltinPseudo */
+.chroma .bp {
+    color: #9daccc;
+}
+
+/* NameClass */
+.chroma .nc {
+    color: #fa1;
+}
+
+/* NameConstant */
+.chroma .no {
+    color: #fa1;
+}
+
+/* NameDecorator */
+.chroma .nd {
+    color: #9daccc;
+}
+
+/* NameEntity */
+.chroma .ni {
+    color: #fa1;
+}
+
+/* NameException */
+.chroma .ne {
+    color: #af8700;
+}
+
+/* NameFunction */
+.chroma .nf {
+    color: #9daccc;
+}
+
+/* NameLabel */
+.chroma .nl {
+    color: #fa1;
+}
+
+/* NameNamespace */
+.chroma .nn {
+    color: #fa1;
+}
+
+/* NameOther */
+.chroma .nx {
+    color: #9daccc;
+}
+
+/* NameTag */
+.chroma .nt {
+    color: #9daccc;
+}
+
+/* NameVariable */
+.chroma .nv {
+    color: #9daccc;
+}
+
+/* NameVariableClass */
+.chroma .vc {
+    color: #f81;
+}
+
+/* NameVariableGlobal */
+.chroma .vg {
+    color: #fa1;
+}
+
+/* NameVariableInstance */
+.chroma .vi {
+    color: #fa1;
+}
+
+/* LiteralString */
+.chroma .s {
+    color: #1af;
+}
+
+/* LiteralStringAffix */
+.chroma .sa {
+    color: #1af;
+}
+
+/* LiteralStringBacktick */
+.chroma .sb {
+    color: #a0cc75;
+}
+
+/* LiteralStringChar */
+.chroma .sc {
+    color: #1af;
+}
+
+/* LiteralStringDelimiter */
+.chroma .dl {
+    color: #1af;
+}
+
+/* LiteralStringDoc */
+.chroma .sd {
+    color: #6a737d;
+}
+
+/* LiteralStringDouble */
+.chroma .s2 {
+    color: #a0cc75;
+}
+
+/* LiteralStringEscape */
+.chroma .se {
+    color: #f63;
+}
+
+/* LiteralStringHeredoc */
+.chroma .sh {
+    color: #1af;
+}
+
+/* LiteralStringInterpol */
+.chroma .si {
+    color: #fa1;
+}
+
+/* LiteralStringOther */
+.chroma .sx {
+    color: #fa1;
+}
+
+/* LiteralStringRegex */
+.chroma .sr {
+    color: #97c;
+}
+
+/* LiteralStringSingle */
+.chroma .s1 {
+    color: #a0cc75;
+}
+
+/* LiteralStringSymbol */
+.chroma .ss {
+    color: #fa1;
+}
+
+/* LiteralNumber */
+.chroma .m {
+    color: #1af;
+}
+
+/* LiteralNumberBin */
+.chroma .mb {
+    color: #1af;
+}
+
+/* LiteralNumberFloat */
+.chroma .mf {
+    color: #1af;
+}
+
+/* LiteralNumberHex */
+.chroma .mh {
+    color: #1af;
+}
+
+/* LiteralNumberInteger */
+.chroma .mi {
+    color: #1af;
+}
+
+/* LiteralNumberIntegerLong */
+.chroma .il {
+    color: #1af;
+}
+
+/* LiteralNumberOct */
+.chroma .mo {
+    color: #1af;
+}
+
+/* Operator */
+.chroma .o {
+    color: #f63;
+}
+
+/* OperatorWord */
+.chroma .ow {
+    color: #5f8700;
+}
+
+/* Comment */
+.chroma .c {
+    color: #6a737d;
+}
+
+/* CommentHashbang */
+.chroma .ch {
+    color: #6a737d;
+}
+
+/* CommentMultiline */
+.chroma .cm {
+    color: #6a737d;
+}
+
+/* CommentSingle */
+.chroma .c1 {
+    color: #6a737d;
+}
+
+/* CommentSpecial */
+.chroma .cs {
+    color: #637d;
+}
+
+/* CommentPreproc */
+.chroma .cp {
+    color: #fc6;
+}
+
+/* CommentPreprocFile */
+.chroma .cpf {
+    color: #03dfff;
+}
+
+/* GenericDeleted */
+.chroma .gd {
+    color: #fff;
+    background-color: #5f3737;
+}
+
+/* GenericEmph */
+.chroma .ge {
+    color: #ef5;
+}
+
+/* GenericError */
+.chroma .gr {
+    color: #f33;
+}
+
+/* GenericHeading */
+.chroma .gh {
+    color: #fa1;
+}
+
+/* GenericInserted */
+.chroma .gi {
+    color: #fff;
+    background-color: #3a523a;
+}
+
+/* GenericOutput */
+.chroma .go {
+    color: #888888;
+}
+
+/* GenericPrompt */
+.chroma .gp {
+    color: #555555;
+}
+
+/* GenericSubheading */
+.chroma .gu {
+    color: #9daccc;
+}
+
+/* GenericTraceback */
+.chroma .gt {
+    color: #f63;
+}
+
+/* TextWhitespace */
+.chroma .w {
+    color: #bbbbbb;
+}
