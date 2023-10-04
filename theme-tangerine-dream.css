@@ -121,6 +121,7 @@
     --color-input-border-hover: #505667;
     --color-navbar: #2b2f38; /*#24262B */
     --color-navbar-transparent: #24262B00;
+    --color-nav-hover-bg: var(--color-primary-light-2);
     --color-light: #00000028;
     --color-light-mimic-enabled: rgba(0, 0, 0, calc(40 / 255 * 222 / 255 / var(--opacity-disabled)));
     --color-light-border: #ffffff28;
